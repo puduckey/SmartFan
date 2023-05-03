@@ -83,7 +83,7 @@
         <TextView
             android:layout_width="190dp"
             android:layout_height="wrap_content"
-            android:text=" 02:00PM - 06:00PM"
+            android:text=" 14:00 - 18:00"
             android:textSize="18dp"
             android:layout_weight="0"
             android:textColor="@color/black"
