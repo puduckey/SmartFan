@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Sincronizacion">
     <FrameLayout
         android:layout_width="match_parent"
@@ -20,4 +21,45 @@
             android:textColor="@color/white"
             />
     </FrameLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/menos"
+        android:layout_gravity="center|top"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dispositivo Arduino"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sincronizado"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        />
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint=" Bluetooth activado"
+        android:checked="true"
+        android:textSize="18dp"
+        android:textColorHint="@color/black"
+        />
+
+    <Button
+        android:id="@+id/btn_sincronizacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@color/black"
+        android:drawableTint="@color/white"
+        android:text="Sincronizacion"
+        android:textColor="@color/white" />
 </LinearLayout>
