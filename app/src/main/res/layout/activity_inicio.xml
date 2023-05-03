@@ -54,7 +54,8 @@
             android:layout_height="100dp"
             android:layout_gravity="center|top"
             android:layout_marginTop="35dp"
-            android:src="@drawable/fan" />
+            android:src="@drawable/fan"
+            />
 
         <TextView
             android:layout_width="match_parent"
@@ -77,8 +78,11 @@
             android:drawablePadding="2dp"
             android:padding="15dp"
             android:text="Estadisticas"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:onClick="irPantallaEstadisticas"
+            android:backgroundTint="@color/black"
+            android:drawableTint="@color/white"
+
             />
 
         <Button
@@ -92,8 +96,10 @@
             android:drawablePadding="2dp"
             android:padding="15dp"
             android:text="Configurar"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:onClick="irPantallaConfiguracion"
+            android:backgroundTint="@color/black"
+            android:drawableTint="@color/white"
             />
     </FrameLayout>
 

@@ -21,54 +21,116 @@
             android:textColor="@color/white"
             />
     </FrameLayout>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/fan"
+        android:layout_gravity="center|top"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sistema conectado"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        />
+
     <Button
         android:id="@+id/btn_sincronizacion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sincronizacion"
         android:layout_margin="10px"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:drawableTint="@color/white"
         android:onClick="irPantallaSincronizacion"
         />
     <Switch
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:hint=" Activacion automatica"
         android:checked="true"
-        />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Umbral de temperatura en C°"
-        android:textAlignment="center"
-        android:inputType="number"
-        />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Hora inicio"
-        android:textAlignment="center"
-        android:inputType="datetime"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Hora fin"
-        android:textAlignment="center"
-        android:inputType="datetime"
+        android:textSize="18dp"
+        android:textColorHint="@color/black"
         />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text=" Umbral de activación"
+            android:textSize="18dp"
+            android:layout_weight="0"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:hint="30"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text="°C"
+            android:textSize="18dp"
+            android:layout_gravity="right|center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text=" Horario"
+            android:textSize="18dp"
+            android:layout_weight="0"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Hora inicio"
+            android:textAlignment="center"
+            android:inputType="datetime"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:hint="Hora fin"
+        android:textAlignment="center"
+        android:inputType="datetime"
+        android:layout_gravity="right|center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=" Tiempo de actualizacion"
+            android:textColor="@color/black"
             android:layout_weight="0"
+            android:textSize="18dp"
             />
 
         <Spinner
@@ -85,6 +147,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint=" Recibir notificaciones"
+        android:textColorHint="@color/black"
         android:checked="true"
+        android:textSize="18dp"
+        android:layout_marginTop="5dp"
         />
 </LinearLayout>
